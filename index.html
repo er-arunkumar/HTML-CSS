@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <div class="container">
+         <div class="navbar">
+             <img src="./assets/images/logo.png"  class="logo" alt="site-logo">
+             <nav class="menu">
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                </ul>
+             </nav>
+             <i class="material-icons" onclick="togglemenu();">menu</i>
+         </div>
+         <div class="row">
+             <div class="col-1">
+                <h2>PS4 V2<br/>Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compactible/Generic)-<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium iure accusamus vel, ex quia.</span></p>
+                <h4>$39.50</h4>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+             <div class="col-2">
+                <img src="./assets/images/controller.png" alt="game controller" class="controller">
+                <div class="color-box"></div>
+            </div>
+         </div>
+            <div class="social-links">
+                <img src="./assets/images/facebook logo.svg" alt="facebook-icon">
+                <img src="./assets/images/youtube logo.svg" alt="youtube-icon">
+                <img src="./assets/images/instagram logo.svg" alt="instagram-icon">
+            </div>
+     </div>
+     <script>
+         var menuList= document.getElementById("menuList");
+         menuList.style.maxHeight="0px";
+
+         function togglemenu(){
+             if(menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="130px";
+             }else{
+                menuList.style.maxHeight="0px"
+             }
+         }
+     </script>
+</body>
+</html>

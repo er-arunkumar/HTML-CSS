@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.material-icons{
+    display: none;
+    width: 24px;
+    cursor: pointer;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-style: 14px;
+}
+.menu ul li a:hover{
+    color:#DE0029 ;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;   
+}
+.col-1{
+    flex-basis:40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color:#2b2a2a ;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font: size 16px;
+    color: #000;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.col-1 p span{
+    font: size 16px;
+    color: rgb(49, 49, 49);
+    font-weight: 80;
+}
+.col-1 button{
+    width: 150px;
+    margin: 20px 0;
+    bottom: 0;
+    padding: 12px 10px;
+    outline: none;
+    border-radius: 8px;
+    background: #DE0029;
+}
+.col-1 button a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.col-1 button:hover{
+    background: transparent;
+    border-radius: 8px;
+    border:2px solid #DE0029; 
+    color:#DE0029;
+}
+.col-1 button a:hover{
+    color: #DE0029; 
+    font-weight: bolder;
+}
+.col-2{
+    position:relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+
+}
+.col-2 .controller{
+    width: 90%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff54a2, #ff575a);
+    border-radius:20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translate(110px,10px);
+}
+.social-links{
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+}
+.social-links img{
+    width:20 px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.social-links img:hover{
+    opacity: 0.6;
+}
+/* Break Points */
+@media only screen and (max-width:700px){
+    .menu ul{
+        width: 100%;
+        height: 30%;
+        background:#f8244b ;
+        position: absolute;
+        top:75px;
+        right: 0;
+        z-index: 2;
+    }
+    .menu ul li{
+        display: block;
+        margin-top:10px ;
+        margin-bottom: 10px;
+    }
+    .menu ul li a{
+        color: #fff;  
+    }
+    .material-icons{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        margin-bottom: 30px;
+    }
+    
+}
